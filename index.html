@@ -1,0 +1,1576 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="The complete collection of Skyrizi vs Rinvoq party games, built for a premium mobile experience.">
+    
+    <!-- iOS & PWA Enhancements -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Skyrizi Party">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ctext y='.9em' font-size='90'%3e%f0%9f%92%8a%3c/text%3e%3c/svg%3e">
+    
+    <!-- Theme Colors -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f2f2f7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    
+    <title>Skyrizi vs Rinvoq Party! 🎉</title>
+    <style>
+        /*
+         * =================================================================================
+         * iOS-CENTRIC SKYRIZI vs RINVOQ PARTY GAMES
+         * 
+         * Enhanced with:
+         * - True iOS color system and typography
+         * - OLED-optimized pure black dark mode
+         * - Apple Human Interface Guidelines compliance
+         * - Advanced blur effects and vibrancy
+         * - Optimized for all iPhone screen sizes
+         * =================================================================================
+         */
+        
+        /* Import SF Pro Display for authentic iOS typography */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        
+        :root {
+            /* iOS System Colors */
+            --color-blue: #007AFF;
+            --color-green: #34C759;
+            --color-indigo: #5856D6;
+            --color-orange: #FF9500;
+            --color-pink: #FF2D92;
+            --color-purple: #AF52DE;
+            --color-red: #FF3B30;
+            --color-teal: #5AC8FA;
+            --color-yellow: #FFCC00;
+            
+            /* Typography */
+            --font-family-system: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', Inter, system-ui, sans-serif;
+            --font-weight-regular: 400;
+            --font-weight-medium: 500;
+            --font-weight-semibold: 600;
+            --font-weight-bold: 700;
+            --font-weight-heavy: 800;
+            --font-weight-black: 900;
+            
+            /* iOS Spacing */
+            --spacing-xs: 4px;
+            --spacing-sm: 8px;
+            --spacing-md: 16px;
+            --spacing-lg: 24px;
+            --spacing-xl: 32px;
+            --spacing-2xl: 48px;
+            
+            /* iOS Border Radius */
+            --radius-xs: 6px;
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 20px;
+            --radius-2xl: 24px;
+            --radius-3xl: 32px;
+            
+            /* iOS Transitions */
+            --transition-fast: all 0.15s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-smooth: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            --transition-theme: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+            
+            /* iOS Shadows */
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            --shadow-md: 0 3px 6px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Light Theme */
+        html[data-theme="light"] {
+            --color-bg-primary: #f2f2f7;
+            --color-bg-secondary: #ffffff;
+            --color-bg-tertiary: #f2f2f7;
+            --color-bg-elevated: rgba(255, 255, 255, 0.8);
+            --color-bg-grouped: #f2f2f7;
+            
+            --color-text-primary: #000000;
+            --color-text-secondary: #3c3c43;
+            --color-text-tertiary: #8e8e93;
+            --color-text-quaternary: #c7c7cc;
+            
+            --color-separator: rgba(60, 60, 67, 0.29);
+            --color-overlay: rgba(0, 0, 0, 0.4);
+            
+            --blur-material: blur(20px) saturate(180%);
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dark Theme - True Black for OLED */
+        html[data-theme="dark"] {
+            --color-bg-primary: #000000;
+            --color-bg-secondary: #1c1c1e;
+            --color-bg-tertiary: #2c2c2e;
+            --color-bg-elevated: rgba(28, 28, 30, 0.9);
+            --color-bg-grouped: #000000;
+            
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #ebebf5;
+            --color-text-tertiary: #8e8e93;
+            --color-text-quaternary: #48484a;
+            
+            --color-separator: rgba(84, 84, 88, 0.6);
+            --color-overlay: rgba(0, 0, 0, 0.7);
+            
+            --blur-material: blur(20px) saturate(180%);
+            --shadow-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Reset & Base */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: var(--font-family-system);
+            font-weight: var(--font-weight-regular);
+            margin: 0;
+            padding: 0;
+            background: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            user-select: none;
+            transition: var(--transition-theme);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            
+            /* Dynamic Island and Notch Support */
+            padding-top: env(safe-area-inset-top);
+            padding-bottom: env(safe-area-inset-bottom);
+            padding-left: env(safe-area-inset-left);
+            padding-right: env(safe-area-inset-right);
+        }
+
+        /* Animated Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, 
+                var(--color-blue) 0%, 
+                var(--color-purple) 25%, 
+                var(--color-pink) 50%, 
+                var(--color-orange) 75%, 
+                var(--color-yellow) 100%);
+            background-size: 400% 400%;
+            animation: gradientShift 20s ease infinite;
+            opacity: 0.1;
+            z-index: -1;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        /* iOS-Style Animations */
+        @keyframes bounceIn {
+            0% { transform: scale(0.3) translateY(20px); opacity: 0; }
+            50% { transform: scale(1.05) translateY(-5px); }
+            70% { transform: scale(0.95) translateY(2px); }
+            100% { transform: scale(1) translateY(0); opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-1deg); }
+            50% { transform: rotate(1deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes celebrate {
+            0% { transform: scale(0) rotate(-180deg); opacity: 0; }
+            50% { transform: scale(1.2) rotate(-90deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+
+        @keyframes confettiFall {
+            to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+        }
+
+        /* Utility Classes */
+        .is-hidden { display: none !important; }
+
+        /* iOS-Style Container */
+        .container {
+            max-width: 100%;
+            min-height: 100vh;
+            padding: var(--spacing-lg);
+            position: relative;
+        }
+
+        /* iOS-Style Navigation */
+        .nav-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: calc(44px + env(safe-area-inset-top));
+            background: var(--color-bg-elevated);
+            backdrop-filter: var(--blur-material);
+            -webkit-backdrop-filter: var(--blur-material);
+            border-bottom: 0.5px solid var(--color-separator);
+            z-index: 1000;
+            display: flex;
+            align-items: flex-end;
+            padding: 0 var(--spacing-md) var(--spacing-sm);
+            transition: var(--transition-theme);
+        }
+
+        .nav-button {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: var(--color-bg-secondary);
+            border: none;
+            color: var(--color-text-primary);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: currentColor;
+            opacity: 0;
+            transition: var(--transition-fast);
+        }
+
+        .nav-button:active {
+            transform: scale(0.95);
+        }
+
+        .nav-button:active::before {
+            opacity: 0.1;
+        }
+
+        .back-btn {
+            position: absolute;
+            left: var(--spacing-md);
+        }
+
+        .theme-toggle {
+            position: absolute;
+            right: var(--spacing-md);
+        }
+
+        .score-counter {
+            position: absolute;
+            right: calc(44px + var(--spacing-md) + var(--spacing-sm));
+            background: var(--color-bg-secondary);
+            color: var(--color-text-primary);
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-xl);
+            font-size: 1rem;
+            font-weight: var(--font-weight-semibold);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition-theme);
+        }
+
+        /* Game Screen */
+        .game-screen {
+            animation: slideUp 0.5s var(--transition-bounce);
+            padding-top: calc(44px + env(safe-area-inset-top) + var(--spacing-lg));
+        }
+
+        /* iOS-Style Typography */
+        .game-title {
+            font-size: clamp(2rem, 8vw, 3rem);
+            font-weight: var(--font-weight-heavy);
+            text-align: center;
+            margin: var(--spacing-2xl) 0 var(--spacing-md);
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .game-subtitle {
+            font-size: 1.1rem;
+            font-weight: var(--font-weight-medium);
+            text-align: center;
+            color: var(--color-text-secondary);
+            margin: 0 auto var(--spacing-xl);
+            max-width: 80%;
+            line-height: 1.4;
+        }
+
+        /* Main Menu */
+        .party-header {
+            text-align: center;
+            margin: var(--spacing-2xl) 0;
+        }
+
+        .party-header__title {
+            font-size: clamp(2.5rem, 10vw, 4rem);
+            font-weight: var(--font-weight-black);
+            margin: 0;
+            line-height: 0.9;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, 
+                var(--color-red) 0%, 
+                var(--color-orange) 20%, 
+                var(--color-yellow) 40%, 
+                var(--color-green) 60%, 
+                var(--color-blue) 80%, 
+                var(--color-purple) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: wiggle 6s ease-in-out infinite;
+        }
+
+        .party-header__subtitle {
+            font-size: 1.2rem;
+            font-weight: var(--font-weight-medium);
+            color: var(--color-text-secondary);
+            margin-top: var(--spacing-sm);
+        }
+
+        /* iOS-Style Game Menu */
+        .game-menu {
+            display: grid;
+            gap: var(--spacing-md);
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .game-menu__button {
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-lg);
+            color: var(--color-text-primary);
+            font-size: 1.1rem;
+            font-weight: var(--font-weight-semibold);
+            text-align: left;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+            animation: bounceIn 0.6s var(--transition-bounce);
+            animation-fill-mode: both;
+        }
+
+        .game-menu__button:nth-child(1) { animation-delay: 0.1s; }
+        .game-menu__button:nth-child(2) { animation-delay: 0.2s; }
+        .game-menu__button:nth-child(3) { animation-delay: 0.3s; }
+        .game-menu__button:nth-child(4) { animation-delay: 0.4s; }
+        .game-menu__button:nth-child(5) { animation-delay: 0.5s; }
+        .game-menu__button:nth-child(6) { animation-delay: 0.6s; }
+
+        .game-menu__button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, var(--color-blue), var(--color-purple));
+            opacity: 0;
+            transition: var(--transition-fast);
+        }
+
+        .game-menu__button:active {
+            transform: scale(0.98);
+        }
+
+        .game-menu__button:active::before {
+            opacity: 0.1;
+        }
+
+        .game-menu__icon {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-sm);
+            display: block;
+        }
+
+        .game-menu__title {
+            font-size: 1.2rem;
+            font-weight: var(--font-weight-semibold);
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* iOS-Style Cards */
+        .game-card {
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-lg);
+            margin: var(--spacing-md) 0;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-smooth);
+        }
+
+        /* Pin the Pill Game */
+        .pin-game__poster {
+            width: 90%;
+            max-width: 400px;
+            aspect-ratio: 4 / 5;
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-xl);
+            margin: var(--spacing-lg) auto;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+        }
+
+        .pin-game__poster-header {
+            position: absolute;
+            top: var(--spacing-lg);
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 var(--spacing-lg);
+            font-size: 0.9rem;
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-secondary);
+        }
+
+        .pin-game__poster-body {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+            font-size: clamp(4rem, 15vw, 6rem);
+            opacity: 0.1;
+        }
+
+        .pin-game__item {
+            position: absolute;
+            font-size: 1rem;
+            font-weight: var(--font-weight-semibold);
+            background: var(--color-bg-elevated);
+            backdrop-filter: var(--blur-material);
+            -webkit-backdrop-filter: var(--blur-material);
+            color: var(--color-text-primary);
+            padding: var(--spacing-md);
+            border-radius: var(--radius-md);
+            cursor: grab;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-fast);
+            animation: pulse 3s ease-in-out infinite;
+            border: 0.5px solid var(--color-separator);
+        }
+
+        .pin-game__item:nth-child(2n) {
+            animation-delay: 0.5s;
+        }
+
+        .pin-game__item.is-dragging {
+            cursor: grabbing;
+            transform: scale(1.05);
+            box-shadow: var(--shadow-xl);
+            z-index: 1001;
+        }
+
+        .pin-game__item.is-correct {
+            background: var(--color-green);
+            color: white;
+            animation: popIn 0.5s var(--transition-bounce);
+        }
+
+        .pin-game__item.is-incorrect {
+            background: var(--color-red);
+            color: white;
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        /* Musical Chairs Game */
+        .chair-circle {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            margin: var(--spacing-xl) auto;
+        }
+
+        .music-indicator {
+            text-align: center;
+            font-size: 4rem;
+            margin: var(--spacing-xl) 0;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        .chair {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-md);
+        }
+
+        .chair:active {
+            transform: scale(0.95);
+        }
+
+        .chair.is-taken {
+            background: var(--color-red);
+            color: white;
+            cursor: not-allowed;
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        /* Whack Game */
+        .whack-game__grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--spacing-lg);
+            max-width: 400px;
+            margin: var(--spacing-xl) auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .whack-game__hole {
+            width: 100px;
+            height: 100px;
+            background: var(--color-bg-tertiary);
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--color-separator);
+            box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .whack-game__mole {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 110%);
+            font-size: 2rem;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+            transition: var(--transition-fast);
+            animation-duration: 0.3s;
+            animation-timing-function: var(--transition-bounce);
+            animation-fill-mode: forwards;
+        }
+
+        .whack-game__mole.is-up {
+            animation-name: slideUp;
+            transform: translate(-50%, 10%);
+        }
+
+        /* Duck Game */
+        .duck-circle {
+            position: relative;
+            width: 90vw;
+            height: 90vw;
+            max-width: 400px;
+            max-height: 400px;
+            margin: var(--spacing-xl) auto;
+        }
+
+        .duck-player {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            box-shadow: var(--shadow-md);
+        }
+
+        .duck-player:active {
+            transform: scale(0.95);
+        }
+
+        .duck-player.is-tapped {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px var(--color-blue);
+        }
+
+        .duck-player.is-rinvoq {
+            background: var(--color-yellow);
+            color: var(--color-text-primary);
+            animation: popIn 0.5s var(--transition-bounce);
+        }
+
+        /* Simon Game */
+        .simon-container {
+            max-width: 400px;
+            margin: var(--spacing-xl) auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .command-display {
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-xl);
+            padding: var(--spacing-xl);
+            margin-bottom: var(--spacing-lg);
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: var(--font-weight-semibold);
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+        }
+
+        .simon-buttons {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--spacing-md);
+        }
+
+        .simon-btn {
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            font-size: 1rem;
+            font-weight: var(--font-weight-semibold);
+            color: var(--color-text-primary);
+            cursor: pointer;
+            transition: var(--transition-fast);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+
+        .simon-btn:active {
+            transform: scale(0.98);
+        }
+
+        .simon-btn.is-correct {
+            background: var(--color-green);
+            color: white;
+            animation: popIn 0.5s var(--transition-bounce);
+        }
+
+        .simon-btn.is-wrong {
+            background: var(--color-red);
+            color: white;
+            animation: wiggle 0.5s ease-in-out;
+        }
+
+        /* Hot Potato Game */
+        .potato-game {
+            text-align: center;
+            padding: 0 var(--spacing-md);
+        }
+
+        .potato {
+            font-size: clamp(4rem, 20vw, 6rem);
+            cursor: pointer;
+            display: inline-block;
+            margin: var(--spacing-xl);
+            transition: var(--transition-fast);
+            filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.2));
+        }
+
+        .potato:active {
+            transform: scale(0.95);
+        }
+
+        .potato.is-active {
+            animation: pulse 0.5s ease-in-out infinite;
+        }
+
+        .potato-message {
+            font-size: 1.3rem;
+            font-weight: var(--font-weight-semibold);
+            margin: var(--spacing-lg) auto;
+            background: var(--color-bg-secondary);
+            border: 0.5px solid var(--color-separator);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            max-width: 300px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .timer-bar {
+            width: 90%;
+            max-width: 400px;
+            height: 8px;
+            background: var(--color-bg-tertiary);
+            border-radius: var(--radius-xs);
+            margin: var(--spacing-lg) auto;
+            overflow: hidden;
+        }
+
+        .timer-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--color-green), var(--color-yellow), var(--color-red));
+            border-radius: var(--radius-xs);
+            transition: width linear;
+        }
+
+        /* Celebration Overlay */
+        .celebration-overlay {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(2.5rem, 10vw, 4rem);
+            font-weight: var(--font-weight-black);
+            text-align: center;
+            z-index: 2000;
+            color: white;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            animation: celebrate 0.8s var(--transition-bounce);
+        }
+
+        .confetti {
+            position: fixed;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            top: -20px;
+            animation: confettiFall 3s linear forwards;
+            z-index: 1999;
+        }
+
+        /* Focus States for Accessibility */
+        .nav-button:focus-visible,
+        .game-menu__button:focus-visible,
+        .simon-btn:focus-visible,
+        .chair:focus-visible,
+        .duck-player:focus-visible,
+        .potato:focus-visible {
+            outline: 2px solid var(--color-blue);
+            outline-offset: 2px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 375px) {
+            .container {
+                padding: var(--spacing-md);
+            }
+            
+            .game-menu {
+                padding: 0;
+            }
+            
+            .pin-game__poster {
+                width: 95%;
+            }
+        }
+
+        @media (max-height: 667px) {
+            .party-header {
+                margin: var(--spacing-lg) 0;
+            }
+            
+            .game-title {
+                margin: var(--spacing-lg) 0 var(--spacing-sm);
+            }
+        }
+
+        /* Prefers Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- iOS-Style Navigation Bar -->
+    <nav class="nav-bar">
+        <button id="backBtn" class="nav-button back-btn is-hidden" aria-label="Back to menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+        </button>
+        <button id="themeToggle" class="nav-button theme-toggle" aria-label="Toggle theme">
+            <span id="themeIcon">🌙</span>
+        </button>
+        <div id="scoreCounter" class="score-counter is-hidden">Score: 0</div>
+    </nav>
+
+    <main class="container">
+        <!-- Main Menu -->
+        <section id="mainMenu" class="game-screen">
+            <header class="party-header">
+                <h1 class="party-header__title">Skyrizi vs Rinvoq<br>Ultimate Party!</h1>
+                <p class="party-header__subtitle">Choose your party game adventure</p>
+            </header>
+            
+            <nav class="game-menu">
+                <button class="game-menu__button" data-game="pinThePill">
+                    <span class="game-menu__icon">📍</span>
+                    <h3 class="game-menu__title">Pin the Feature</h3>
+                </button>
+                <button class="game-menu__button" data-game="musicalMeds">
+                    <span class="game-menu__icon">🪑</span>
+                    <h3 class="game-menu__title">Musical Medicine Chairs</h3>
+                </button>
+                <button class="game-menu__button" data-game="whackASideEffect">
+                    <span class="game-menu__icon">🔨</span>
+                    <h3 class="game-menu__title">Whack-a-Side-Effect</h3>
+                </button>
+                <button class="game-menu__button" data-game="duckDuckRinvoq">
+                    <span class="game-menu__icon">🦆</span>
+                    <h3 class="game-menu__title">Duck, Duck, Rinvoq</h3>
+                </button>
+                <button class="game-menu__button" data-game="skyriziSays">
+                    <span class="game-menu__icon">👂</span>
+                    <h3 class="game-menu__title">Skyrizi Says</h3>
+                </button>
+                <button class="game-menu__button" data-game="hotPotato">
+                    <span class="game-menu__icon">🥔</span>
+                    <h3 class="game-menu__title">Hot Potato Pill</h3>
+                </button>
+            </nav>
+        </section>
+
+        <!-- Pin the Pill Game -->
+        <section id="pinThePill" class="game-screen is-hidden">
+            <h2 class="game-title">Pin the Feature</h2>
+            <p class="game-subtitle">Drag the features to the correct medicine!</p>
+            
+            <div class="pin-game__poster" id="pinPoster">
+                <div class="pin-game__poster-header">
+                    <div>SKYRIZI 💉</div>
+                    <div>RINVOQ 💊</div>
+                </div>
+                <div class="pin-game__poster-body">
+                    <span>💉</span>
+                    <span>💊</span>
+                </div>
+            </div>
+            
+            <div id="pinItemsContainer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 500;">
+                <div class="pin-game__item" data-medicine="skyrizi">🗓️ Every 12 weeks</div>
+                <div class="pin-game__item" data-medicine="rinvoq">📅 Daily pill</div>
+                <div class="pin-game__item" data-medicine="skyrizi">🎯 IL-23 blocker</div>
+                <div class="pin-game__item" data-medicine="rinvoq">⚡ JAK inhibitor</div>
+            </div>
+        </section>
+
+        <!-- Musical Chairs Game -->
+        <section id="musicalMeds" class="game-screen is-hidden">
+            <h2 class="game-title">Musical Medicine Chairs</h2>
+            <p class="game-subtitle">Click a Skyrizi chair (💉) when the music stops!</p>
+            
+            <div id="musicIndicator" class="music-indicator">🎵</div>
+            <div id="chairCircle" class="chair-circle"></div>
+        </section>
+
+        <!-- Whack-a-Side-Effect Game -->
+        <section id="whackASideEffect" class="game-screen is-hidden">
+            <h2 class="game-title">Whack-a-Side-Effect</h2>
+            <p class="game-subtitle">Whack RINVOQ side effects! Avoid Skyrizi benefits (💉)</p>
+            
+            <div id="whackGrid" class="whack-game__grid"></div>
+        </section>
+
+        <!-- Duck Duck Rinvoq Game -->
+        <section id="duckDuckRinvoq" class="game-screen is-hidden">
+            <h2 class="game-title">Duck, Duck, RINVOQ!</h2>
+            <p class="game-subtitle">Tap players to say "Skyrizi"... until you pick "RINVOQ"!</p>
+            
+            <div id="duckCircle" class="duck-circle"></div>
+        </section>
+
+        <!-- Skyrizi Says Game -->
+        <section id="skyriziSays" class="game-screen is-hidden">
+            <div class="simon-container">
+                <h2 class="game-title">Skyrizi Says!</h2>
+                <div id="commandDisplay" class="command-display">Get Ready...</div>
+                <div class="simon-buttons">
+                    <button class="simon-btn" data-action="inject">💉 Give injection</button>
+                    <button class="simon-btn" data-action="pill">💊 Take daily pill</button>
+                    <button class="simon-btn" data-action="wait">⏰ Wait 12 weeks</button>
+                    <button class="simon-btn" data-action="test">🩸 Get blood test</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hot Potato Game -->
+        <section id="hotPotato" class="game-screen is-hidden">
+            <div class="potato-game">
+                <h2 class="game-title">Hot Potato Pill</h2>
+                <div class="timer-bar">
+                    <div id="timerFill" class="timer-fill"></div>
+                </div>
+                <div id="potato" class="potato">💊</div>
+                <div id="potatoMessage" class="potato-message">Tap to start the game!</div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        /**
+         * iOS-Enhanced Skyrizi vs Rinvoq Party Games
+         * Optimized for performance and premium user experience
+         */
+        ((window, document) => {
+            'use strict';
+
+            const App = {
+                state: {
+                    activeGame: null,
+                    timers: [],
+                    intervals: [],
+                    theme: 'dark'
+                },
+                elements: {},
+
+                init() {
+                    this.cacheElements();
+                    this.applyTheme();
+                    this.bindEvents();
+                    this.showScreen('mainMenu');
+                },
+
+                cacheElements() {
+                    this.elements.html = document.documentElement;
+                    this.elements.container = document.querySelector('.container');
+                    
+                    // Cache all game screens
+                    document.querySelectorAll('.game-screen').forEach(el => {
+                        this.elements[el.id] = el;
+                    });
+                    
+                    // Cache navigation elements
+                    this.elements.gameMenu = document.querySelector('.game-menu');
+                    this.elements.backBtn = document.getElementById('backBtn');
+                    this.elements.themeToggle = document.getElementById('themeToggle');
+                    this.elements.themeIcon = document.getElementById('themeIcon');
+                    this.elements.scoreCounter = document.getElementById('scoreCounter');
+                },
+
+                bindEvents() {
+                    // Game menu navigation
+                    this.elements.gameMenu.addEventListener('click', e => {
+                        const btn = e.target.closest('.game-menu__button');
+                        if (btn?.dataset.game) {
+                            this.startGame(btn.dataset.game);
+                        }
+                    });
+
+                    // Navigation buttons
+                    this.elements.backBtn.addEventListener('click', () => this.backToMenu());
+                    this.elements.themeToggle.addEventListener('click', () => this.toggleTheme());
+
+                    // Handle system theme changes
+                    if (window.matchMedia) {
+                        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                            if (!localStorage.getItem('theme')) {
+                                this.applyTheme();
+                            }
+                        });
+                    }
+                },
+
+                applyTheme() {
+                    const savedTheme = localStorage.getItem('theme');
+                    const systemPrefersDark = window.matchMedia?.('(prefers-color-scheme: dark)').matches;
+                    
+                    this.state.theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+                    
+                    this.elements.html.dataset.theme = this.state.theme;
+                    this.elements.themeIcon.textContent = this.state.theme === 'dark' ? '☀️' : '🌙';
+                    
+                    const ariaLabel = `Switch to ${this.state.theme === 'dark' ? 'light' : 'dark'} mode`;
+                    this.elements.themeToggle.setAttribute('aria-label', ariaLabel);
+                },
+
+                toggleTheme() {
+                    this.state.theme = this.state.theme === 'light' ? 'dark' : 'light';
+                    localStorage.setItem('theme', this.state.theme);
+                    this.applyTheme();
+                },
+
+                showScreen(screenId) {
+                    // Hide all screens
+                    Object.values(this.elements).forEach(el => {
+                        if (el?.classList?.contains('game-screen')) {
+                            el.classList.add('is-hidden');
+                        }
+                    });
+
+                    // Show target screen
+                    this.elements[screenId]?.classList.remove('is-hidden');
+
+                    // Update navigation visibility
+                    if (screenId === 'mainMenu') {
+                        this.elements.backBtn.classList.add('is-hidden');
+                        this.elements.scoreCounter.classList.add('is-hidden');
+                    } else {
+                        this.elements.backBtn.classList.remove('is-hidden');
+                        if (['whackASideEffect'].includes(screenId)) {
+                            this.elements.scoreCounter.classList.remove('is-hidden');
+                        }
+                    }
+                },
+
+                cleanup() {
+                    // Clear all timers and intervals
+                    this.state.timers.forEach(clearTimeout);
+                    this.state.intervals.forEach(clearInterval);
+                    this.state.timers = [];
+                    this.state.intervals = [];
+
+                    // Stop current game
+                    if (this.state.activeGame && this.Games[this.state.activeGame]?.stop) {
+                        this.Games[this.state.activeGame].stop();
+                    }
+                },
+
+                startGame(gameId) {
+                    this.cleanup();
+                    
+                    if (this.Games[gameId]?.start) {
+                        this.state.activeGame = gameId;
+                        this.showScreen(gameId);
+                        
+                        // Small delay to ensure DOM is ready
+                        setTimeout(() => {
+                            this.Games[gameId].start();
+                        }, 100);
+                    }
+                },
+
+                backToMenu() {
+                    this.cleanup();
+                    this.state.activeGame = null;
+                    this.showScreen('mainMenu');
+                },
+
+                celebrate(message, duration = 2000) {
+                    // Create celebration overlay
+                    const celebration = document.createElement('div');
+                    celebration.className = 'celebration-overlay';
+                    celebration.textContent = message;
+                    document.body.appendChild(celebration);
+
+                    // Generate confetti
+                    for (let i = 0; i < 30; i++) {
+                        this.state.timers.push(setTimeout(() => {
+                            const confetti = document.createElement('div');
+                            confetti.className = 'confetti';
+                            confetti.style.left = `${Math.random() * 100}%`;
+                            confetti.style.backgroundColor = this.getRandomColor();
+                            confetti.style.animationDelay = `${Math.random() * 0.5}s`;
+                            document.body.appendChild(confetti);
+
+                            // Remove confetti after animation
+                            this.state.timers.push(setTimeout(() => {
+                                confetti.remove();
+                            }, 3000));
+                        }, i * 50));
+                    }
+
+                    // Remove celebration overlay
+                    this.state.timers.push(setTimeout(() => {
+                        celebration.remove();
+                    }, duration));
+                },
+
+                getRandomColor() {
+                    const colors = ['#007AFF', '#34C759', '#FF3B30', '#FF9500', '#AF52DE', '#5856D6'];
+                    return colors[Math.floor(Math.random() * colors.length)];
+                },
+
+                // Game implementations
+                Games: {
+                    pinThePill: {
+                        isDragging: false,
+                        draggedItem: null,
+                        offsetX: 0,
+                        offsetY: 0,
+
+                        start() {
+                            this.itemsContainer = document.getElementById('pinItemsContainer');
+                            this.poster = document.getElementById('pinPoster');
+                            this.items = this.itemsContainer.querySelectorAll('.pin-game__item');
+                            
+                            this.boundOnDragStart = this.onDragStart.bind(this);
+                            this.boundOnDragMove = this.onDragMove.bind(this);
+                            this.boundOnDragEnd = this.onDragEnd.bind(this);
+                            
+                            this.reset();
+                            this.itemsContainer.addEventListener('pointerdown', this.boundOnDragStart);
+                        },
+
+                        stop() {
+                            this.itemsContainer?.removeEventListener('pointerdown', this.boundOnDragStart);
+                            document.removeEventListener('pointermove', this.boundOnDragMove);
+                            document.removeEventListener('pointerup', this.boundOnDragEnd);
+                        },
+
+                        reset() {
+                            this.items.forEach(item => {
+                                item.classList.remove('is-correct', 'is-incorrect', 'is-dragging');
+                                item.style.top = `${Math.random() * (window.innerHeight * 0.5) + (window.innerHeight * 0.3)}px`;
+                                item.style.left = Math.random() < 0.5 ? 
+                                    `${Math.random() * 15}vw` : 
+                                    `${75 + Math.random() * 15}vw`;
+                            });
+                        },
+
+                        onDragStart(e) {
+                            const item = e.target.closest('.pin-game__item');
+                            if (!item || item.classList.contains('is-correct')) return;
+
+                            this.isDragging = true;
+                            this.draggedItem = item;
+                            this.draggedItem.classList.add('is-dragging');
+
+                            const rect = this.draggedItem.getBoundingClientRect();
+                            this.offsetX = e.clientX - rect.left;
+                            this.offsetY = e.clientY - rect.top;
+
+                            document.addEventListener('pointermove', this.boundOnDragMove);
+                            document.addEventListener('pointerup', this.boundOnDragEnd, { once: true });
+                            
+                            e.preventDefault();
+                        },
+
+                        onDragMove(e) {
+                            if (!this.isDragging || !this.draggedItem) return;
+                            
+                            e.preventDefault();
+                            this.draggedItem.style.left = `${e.clientX - this.offsetX}px`;
+                            this.draggedItem.style.top = `${e.clientY - this.offsetY}px`;
+                        },
+
+                        onDragEnd() {
+                            if (!this.isDragging || !this.draggedItem) return;
+
+                            this.draggedItem.classList.remove('is-dragging');
+
+                            const itemRect = this.draggedItem.getBoundingClientRect();
+                            const posterRect = this.poster.getBoundingClientRect();
+                            const itemCenterX = itemRect.left + itemRect.width / 2;
+
+                            // Check if dropped on poster
+                            if (itemCenterX > posterRect.left && 
+                                itemCenterX < posterRect.right && 
+                                itemRect.top > posterRect.top && 
+                                itemRect.bottom < posterRect.bottom) {
+                                
+                                const isSkyrizi = this.draggedItem.dataset.medicine === 'skyrizi';
+                                const onLeftSide = itemCenterX < (posterRect.left + posterRect.width / 2);
+
+                                if ((isSkyrizi && onLeftSide) || (!isSkyrizi && !onLeftSide)) {
+                                    this.draggedItem.classList.add('is-correct');
+                                    App.celebrate('Perfect Match! 🎯');
+                                } else {
+                                    this.draggedItem.classList.add('is-incorrect');
+                                }
+                            }
+
+                            this.isDragging = false;
+                            this.draggedItem = null;
+                            document.removeEventListener('pointermove', this.boundOnDragMove);
+                        }
+                    },
+
+                    musicalMeds: {
+                        musicPlaying: true,
+
+                        start() {
+                            this.circle = document.getElementById('chairCircle');
+                            this.indicator = document.getElementById('musicIndicator');
+                            this.boundOnClickChair = this.onClickChair.bind(this);
+
+                            this.setupChairs();
+                            this.circle.addEventListener('click', this.boundOnClickChair);
+                            
+                            this.startMusicCycle();
+                        },
+
+                        stop() {
+                            this.circle?.removeEventListener('click', this.boundOnClickChair);
+                        },
+
+                        setupChairs() {
+                            const medicines = ['💉', '💊', '💉', '💊', '💉'];
+                            this.circle.innerHTML = '';
+
+                            medicines.forEach((med, i) => {
+                                const angle = (i * 360 / medicines.length) * Math.PI / 180;
+                                const chair = document.createElement('div');
+                                chair.className = 'chair';
+                                chair.textContent = med;
+                                chair.dataset.medicine = med === '💉' ? 'skyrizi' : 'rinvoq';
+                                
+                                const radius = 120;
+                                chair.style.left = `${150 + radius * Math.cos(angle) - 30}px`;
+                                chair.style.top = `${150 + radius * Math.sin(angle) - 30}px`;
+                                
+                                this.circle.appendChild(chair);
+                            });
+                        },
+
+                        startMusicCycle() {
+                            const nextCycle = () => {
+                                this.toggleMusic();
+                                const delay = Math.random() * 3000 + 2000;
+                                App.state.timers.push(setTimeout(nextCycle, delay));
+                            };
+                            nextCycle();
+                        },
+
+                        toggleMusic() {
+                            this.musicPlaying = !this.musicPlaying;
+                            this.indicator.textContent = this.musicPlaying ? '🎵' : '🔇';
+                            this.indicator.style.animationPlayState = this.musicPlaying ? 'running' : 'paused';
+                        },
+
+                        onClickChair(e) {
+                            const chair = e.target.closest('.chair');
+                            if (!chair || this.musicPlaying || chair.classList.contains('is-taken')) return;
+
+                            if (chair.dataset.medicine === 'skyrizi') {
+                                chair.classList.add('is-taken');
+                                chair.style.background = 'var(--color-green)';
+                                App.celebrate('Perfect Timing! 🎵');
+                            } else {
+                                chair.classList.add('is-taken');
+                                chair.style.background = 'var(--color-red)';
+                            }
+                        }
+                    },
+
+                    whackASideEffect: {
+                        score: 0,
+                        moles: [],
+
+                        start() {
+                            this.grid = document.getElementById('whackGrid');
+                            this.scoreEl = document.getElementById('scoreCounter');
+                            
+                            this.moleData = [
+                                { text: '🩸 Blood Tests', type: 'bad' },
+                                { text: '💉 Clear Skin', type: 'good' },
+                                { text: '📊 Lipid Changes', type: 'bad' },
+                                { text: '🦠 Infections', type: 'bad' },
+                                { text: '✨ 12 Week Dosing', type: 'good' },
+                                { text: '⚠️ Warnings', type: 'bad' },
+                                { text: '😌 Easy Schedule', type: 'good' },
+                                { text: '💊 Daily Pills', type: 'bad' },
+                                { text: '🫀 Heart Risks', type: 'bad' }
+                            ];
+
+                            this.setupGrid();
+                            this.score = 0;
+                            this.updateScore(0);
+                            this.startMoleGame();
+                        },
+
+                        stop() {
+                            this.grid?.removeEventListener('click', this.boundOnWhack);
+                        },
+
+                        setupGrid() {
+                            this.grid.innerHTML = '';
+                            this.moles = [];
+
+                            this.moleData.forEach(data => {
+                                const hole = document.createElement('div');
+                                hole.className = 'whack-game__hole';
+                                
+                                const mole = document.createElement('div');
+                                mole.className = 'whack-game__mole';
+                                mole.textContent = data.text;
+                                mole.dataset.type = data.type;
+                                
+                                hole.appendChild(mole);
+                                this.grid.appendChild(hole);
+                                this.moles.push(mole);
+                            });
+
+                            this.boundOnWhack = this.onWhack.bind(this);
+                            this.grid.addEventListener('click', this.boundOnWhack);
+                        },
+
+                        startMoleGame() {
+                            const popMole = () => {
+                                this.popUpRandomMole();
+                                const delay = Math.random() * 1000 + 800;
+                                App.state.timers.push(setTimeout(popMole, delay));
+                            };
+                            popMole();
+                        },
+
+                        updateScore(points) {
+                            this.score = Math.max(0, this.score + points);
+                            this.scoreEl.textContent = `Score: ${this.score}`;
+                        },
+
+                        popUpRandomMole() {
+                            const availableMoles = this.moles.filter(m => !m.classList.contains('is-up'));
+                            if (availableMoles.length === 0) return;
+
+                            const mole = availableMoles[Math.floor(Math.random() * availableMoles.length)];
+                            mole.classList.add('is-up');
+
+                            App.state.timers.push(setTimeout(() => {
+                                mole.classList.remove('is-up');
+                            }, 1800));
+                        },
+
+                        onWhack(e) {
+                            const mole = e.target.closest('.whack-game__mole');
+                            if (!mole || !mole.classList.contains('is-up')) return;
+
+                            mole.classList.remove('is-up');
+
+                            if (mole.dataset.type === 'bad') {
+                                this.updateScore(10);
+                                App.celebrate('+10! 🔨', 1000);
+                            } else {
+                                this.updateScore(-5);
+                                mole.parentElement.style.background = 'var(--color-red)';
+                                App.state.timers.push(setTimeout(() => {
+                                    mole.parentElement.style.background = '';
+                                }, 500));
+                            }
+                        }
+                    },
+
+                    duckDuckRinvoq: {
+                        start() {
+                            this.circle = document.getElementById('duckCircle');
+                            this.players = ['👨', '👩', '🧑', '👴', '👵', '👶', '👧', '👦'];
+                            
+                            this.setupPlayers();
+                            this.boundOnTap = this.onTap.bind(this);
+                            this.circle.addEventListener('click', this.boundOnTap);
+                        },
+
+                        stop() {
+                            this.circle?.removeEventListener('click', this.boundOnTap);
+                        },
+
+                        setupPlayers() {
+                            this.circle.innerHTML = '';
+                            const radius = Math.min(this.circle.offsetWidth, this.circle.offsetHeight) / 2 - 40;
+
+                            this.players.forEach((player, i) => {
+                                const angle = (i * 360 / this.players.length) * Math.PI / 180;
+                                const div = document.createElement('div');
+                                div.className = 'duck-player';
+                                div.textContent = player;
+                                
+                                div.style.left = `${radius + radius * Math.cos(angle)}px`;
+                                div.style.top = `${radius + radius * Math.sin(angle)}px`;
+                                
+                                this.circle.appendChild(div);
+                            });
+                        },
+
+                        onTap(e) {
+                            const player = e.target.closest('.duck-player');
+                            if (!player) return;
+
+                            player.classList.add('is-tapped');
+                            
+                            const isRinvoq = Math.random() > 0.75;
+                            if (isRinvoq) {
+                                player.classList.add('is-rinvoq');
+                                App.celebrate('RINVOQ! 💊');
+                            }
+
+                            App.state.timers.push(setTimeout(() => {
+                                player.classList.remove('is-tapped', 'is-rinvoq');
+                            }, 1200));
+                        }
+                    },
+
+                    skyriziSays: {
+                        currentCommand: null,
+
+                        start() {
+                            this.display = document.getElementById('commandDisplay');
+                            this.buttons = document.querySelector('.simon-buttons');
+                            
+                            this.commands = [
+                                { text: 'Give an injection!', action: 'inject', valid: false },
+                                { text: 'Take a daily pill!', action: 'pill', valid: false },
+                                { text: 'Skyrizi says wait 12 weeks!', action: 'wait', valid: true },
+                                { text: 'Skyrizi says give injection!', action: 'inject', valid: true },
+                                { text: 'Get a blood test!', action: 'test', valid: false },
+                                { text: 'Skyrizi says avoid daily pills!', action: 'pill', valid: true }
+                            ];
+
+                            this.boundOnAction = this.onAction.bind(this);
+                            this.buttons.addEventListener('click', this.boundOnAction);
+                            
+                            this.nextCommand();
+                        },
+
+                        stop() {
+                            this.buttons?.removeEventListener('click', this.boundOnAction);
+                        },
+
+                        nextCommand() {
+                            const command = this.commands[Math.floor(Math.random() * this.commands.length)];
+                            this.currentCommand = command;
+                            this.display.textContent = command.text;
+                        },
+
+                        onAction(e) {
+                            const btn = e.target.closest('.simon-btn');
+                            if (!btn) return;
+
+                            const action = btn.dataset.action;
+                            const skyriziSaid = this.currentCommand.text.includes('Skyrizi says');
+                            const correctAction = this.currentCommand.action === action;
+                            
+                            const isCorrect = skyriziSaid && correctAction;
+                            const isCorrectOmission = !skyriziSaid;
+
+                            if (isCorrect || isCorrectOmission) {
+                                btn.classList.add('is-correct');
+                                App.celebrate('Correct! ✅', 1200);
+                            } else {
+                                btn.classList.add('is-wrong');
+                            }
+
+                            App.state.timers.push(setTimeout(() => {
+                                btn.classList.remove('is-correct', 'is-wrong');
+                                this.nextCommand();
+                            }, 1500));
+                        }
+                    },
+
+                    hotPotato: {
+                        active: false,
+
+                        start() {
+                            this.potato = document.getElementById('potato');
+                            this.message = document.getElementById('potatoMessage');
+                            this.timerFill = document.getElementById('timerFill');
+                            
+                            this.boundPass = this.pass.bind(this);
+                            this.potato.addEventListener('click', this.boundPass);
+                            
+                            this.reset();
+                        },
+
+                        stop() {
+                            this.potato?.removeEventListener('click', this.boundPass);
+                            this.active = false;
+                        },
+
+                        reset() {
+                            this.active = false;
+                            this.potato.classList.remove('is-active');
+                            this.potato.textContent = '💊';
+                            this.message.textContent = 'Tap to start the game!';
+                            this.timerFill.style.transition = 'none';
+                            this.timerFill.style.width = '100%';
+                        },
+
+                        pass() {
+                            if (this.active) {
+                                App.cleanup();
+                                this.reset();
+                                return;
+                            }
+
+                            this.active = true;
+                            this.potato.classList.add('is-active');
+                            
+                            const isRinvoq = Math.random() > 0.3;
+                            this.potato.textContent = isRinvoq ? '💊' : '💉';
+                            this.message.textContent = isRinvoq ? 
+                                'RINVOQ! Pass it quickly!' : 
+                                'SKYRIZI! Safe to hold!';
+
+                            const duration = isRinvoq ? 
+                                (Math.random() * 2000 + 2000) : 
+                                8000;
+
+                            this.timerFill.style.transition = `width ${duration}ms linear`;
+                            this.timerFill.style.width = '0%';
+
+                            App.state.timers.push(setTimeout(() => {
+                                this.potato.textContent = '💥';
+                                this.potato.classList.remove('is-active');
+                                this.message.textContent = isRinvoq ? 
+                                    'BOOM! Daily attention needed!' : 
+                                    'Well done holding Skyrizi!';
+                                this.active = false;
+                            }, duration));
+                        }
+                    }
+                }
+            };
+
+            // Initialize app when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', () => App.init());
+            } else {
+                App.init();
+            }
+
+        })(window, document);
+    </script>
+</body>
+</html>
